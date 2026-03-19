@@ -211,7 +211,7 @@ function CurriculumPlanContent() {
     { day: "Day 2", mod: "Prompt Craft", focus: "CLAUDE.md authoring, session management, Plan Mode, prompt patterns", artifact: "CLAUDE.md template library + prompt pattern cheat sheet + before/after comparison" },
     { day: "Day 3", mod: "Extend & Customize", focus: "Hooks, MCP servers, slash commands, Agent SDK, composed workflows", artifact: "Custom hook + MCP server + slash command + integration architecture" },
     { day: "Day 4", mod: "Customer Scenarios", focus: "Security objections, deployment architecture, cost/ROI, competitive positioning", artifact: "Security FAQ + deployment template + competitive battlecard + demo scripts" },
-    { day: "Day 5", mod: "Ship It (Capstone)", focus: "Blind brief \u2192 working demo \u2192 peer-reviewed presentation", artifact: "Client-tailored capstone presentation + working demo + peer feedback" },
+    { day: "Day 5", mod: "Ship It (Capstone)", focus: "Blind brief → working demo → peer-reviewed presentation", artifact: "Client-tailored capstone presentation + working demo + peer feedback" },
   ];
 
   const modalityData = [
@@ -231,7 +231,7 @@ function CurriculumPlanContent() {
           <h2 style={h1Style}>Curriculum Arc</h2>
         </div>
         <div style={accentLine(C.orange)} />
-        <p style={pStyle}>Basecamp is a five-day, progressive curriculum where each day builds on the one before it. The program follows a deliberate arc: from individual tool proficiency (Days 1\u20133) to customer-facing skills (Day 4) to integrated performance under pressure (Day 5). Every session produces a concrete artifact the learner uses in the field.</p>
+        <p style={pStyle}>Basecamp is a five-day, progressive curriculum where each day builds on the one before it. The program follows a deliberate arc: from individual tool proficiency (Days 1–3) to customer-facing skills (Day 4) to integrated performance under pressure (Day 5). Every session produces a concrete artifact the learner uses in the field.</p>
 
         <h3 style={h2Style}>Sequence and Progression</h3>
         <div style={{ borderRadius: 10, overflow: "hidden", border: `1px solid ${C.lightGray}`, margin: "16px 0 24px" }}>
@@ -251,17 +251,17 @@ function CurriculumPlanContent() {
         </div>
 
         <h3 style={h2Style}>How Each Session Builds on the Last</h3>
-        <p style={pStyle}>The curriculum uses a scaffolded dependency chain. Each day\u2019s skills are prerequisites for the next:</p>
-        <p style={bulletStyle}><span style={dot}>{"\u2022"}</span> <strong>Day 1 \u2192 Day 2:</strong> You must have Claude Code installed and understand the agentic loop before you can learn to steer it with CLAUDE.md and prompt patterns.</p>
-        <p style={bulletStyle}><span style={dot}>{"\u2022"}</span> <strong>Day 2 \u2192 Day 3:</strong> CLAUDE.md conventions and prompt craft are prerequisites for hooks (which enforce conventions) and MCP (which extends Claude\u2019s capabilities). Without Day 2\u2019s mental model, hooks and MCP are just configuration files.</p>
-        <p style={bulletStyle}><span style={dot}>{"\u2022"}</span> <strong>Day 3 \u2192 Day 4:</strong> Technical depth in the product (Days 1\u20133) gives you the credibility to handle security objections, architecture questions, and competitive positioning. You can\u2019t answer a CISO\u2019s questions about sandboxing if you\u2019ve never configured a hook.</p>
-        <p style={bulletStyle}><span style={dot}>{"\u2022"}</span> <strong>Day 4 \u2192 Day 5:</strong> The capstone integrates everything. You receive a blind brief and must install, configure, build, and present \u2014 drawing on every prior day. Day 4\u2019s customer conversation practice gives you the presentation and objection-handling skills the capstone requires.</p>
+        <p style={pStyle}>The curriculum uses a scaffolded dependency chain. Each day’s skills are prerequisites for the next:</p>
+        <p style={bulletStyle}><span style={dot}>{"•"}</span> <strong>Day 1 → Day 2:</strong> You must have Claude Code installed and understand the agentic loop before you can learn to steer it with CLAUDE.md and prompt patterns.</p>
+        <p style={bulletStyle}><span style={dot}>{"•"}</span> <strong>Day 2 → Day 3:</strong> CLAUDE.md conventions and prompt craft are prerequisites for hooks (which enforce conventions) and MCP (which extends Claude’s capabilities). Without Day 2’s mental model, hooks and MCP are just configuration files.</p>
+        <p style={bulletStyle}><span style={dot}>{"•"}</span> <strong>Day 3 → Day 4:</strong> Technical depth in the product (Days 1–3) gives you the credibility to handle security objections, architecture questions, and competitive positioning. You can’t answer a CISO’s questions about sandboxing if you’ve never configured a hook.</p>
+        <p style={bulletStyle}><span style={dot}>{"•"}</span> <strong>Day 4 → Day 5:</strong> The capstone integrates everything. You receive a blind brief and must install, configure, build, and present — drawing on every prior day. Day 4’s customer conversation practice gives you the presentation and objection-handling skills the capstone requires.</p>
 
         <h3 style={h2Style}>Competency Milestones</h3>
         <p style={pStyle}>The program tracks progress through two systems:</p>
-        <p style={bulletStyle}><span style={dot}>{"\u2022"}</span> <strong>Credentials (10 total):</strong> Earned by completing module exercises. Examples include CLI Navigation, Prompt Architecture, MCP Integration, Competitive Positioning, and Live Demo Delivery. These are visible on the hub page as collectible badges.</p>
-        <p style={bulletStyle}><span style={dot}>{"\u2022"}</span> <strong>Knowledge Checkpoints:</strong> Two reflection questions per module that test recall and application. Self-scored with expandable hints.</p>
-        <p style={pStyle}>The credential system provides a sense of progression and makes competency gaps visible. A learner who has all Day 1\u20133 badges but is missing Competitive Positioning knows exactly what to review before a customer conversation.</p>
+        <p style={bulletStyle}><span style={dot}>{"•"}</span> <strong>Credentials (10 total):</strong> Earned by completing module exercises. Examples include CLI Navigation, Prompt Architecture, MCP Integration, Competitive Positioning, and Live Demo Delivery. These are visible on the hub page as collectible badges.</p>
+        <p style={bulletStyle}><span style={dot}>{"•"}</span> <strong>Knowledge Checkpoints:</strong> Two reflection questions per module that test recall and application. Self-scored with expandable hints.</p>
+        <p style={pStyle}>The credential system provides a sense of progression and makes competency gaps visible. A learner who has all Day 1–3 badges but is missing Competitive Positioning knows exactly what to review before a customer conversation.</p>
       </div>
 
       {/* 2. AUDIENCE DIFFERENTIATION */}
@@ -273,36 +273,36 @@ function CurriculumPlanContent() {
         <div style={accentLine(C.blue)} />
         <p style={pStyle}>Basecamp serves four roles with significantly different customer touchpoints, technical depths, and success metrics. The curriculum handles this through a shared-foundation / role-specific-breakout model.</p>
 
-        <h3 style={h2Style}>Shared Sessions (Days 1\u20133)</h3>
-        <p style={pStyle}>Days 1\u20133 are shared across all roles. Every participant builds the same technical foundation on Claude Code \u2014 install, CLAUDE.md, prompt craft, hooks, MCP, and composed workflows. This is intentional:</p>
-        <p style={bulletStyle}><span style={dot}>{"\u2022"}</span> <strong>Credibility requires depth.</strong> A Pre-Sales PE who can\u2019t explain hooks loses the room when a customer asks about guardrails. An SA who has never written a CLAUDE.md can\u2019t design an adoption strategy.</p>
-        <p style={bulletStyle}><span style={dot}>{"\u2022"}</span> <strong>Cross-role learning.</strong> When a Pre-Sales PE and a Post-Sales PE work through the same lab, they develop shared vocabulary and see each other\u2019s perspectives.</p>
+        <h3 style={h2Style}>Shared Sessions (Days 1–3)</h3>
+        <p style={pStyle}>Days 1–3 are shared across all roles. Every participant builds the same technical foundation on Claude Code — install, CLAUDE.md, prompt craft, hooks, MCP, and composed workflows. This is intentional:</p>
+        <p style={bulletStyle}><span style={dot}>{"•"}</span> <strong>Credibility requires depth.</strong> A Pre-Sales PE who can’t explain hooks loses the room when a customer asks about guardrails. An SA who has never written a CLAUDE.md can’t design an adoption strategy.</p>
+        <p style={bulletStyle}><span style={dot}>{"•"}</span> <strong>Cross-role learning.</strong> When a Pre-Sales PE and a Post-Sales PE work through the same lab, they develop shared vocabulary and see each other’s perspectives.</p>
 
         <h3 style={h2Style}>Role-Specific Differentiation</h3>
         <p style={pStyle}>Differentiation happens in three ways:</p>
 
         <h3 style={h3Style}>1. Role-specific competency outcomes (all modules)</h3>
         <p style={pStyle}>Every module defines a different competency target for each role. For example, Day 2 (Prompt Craft):</p>
-        <p style={bulletStyle}><span style={dot}>{"\u2022"}</span> <strong>PE Pre-Sales:</strong> Write a CLAUDE.md for a prospect\u2019s repo during a live evaluation, showing how context transforms output quality.</p>
-        <p style={bulletStyle}><span style={dot}>{"\u2022"}</span> <strong>PE Post-Sales:</strong> Pair-program with a customer engineering team to author CLAUDE.md files tailored to their codebase and CI/CD pipeline.</p>
-        <p style={bulletStyle}><span style={dot}>{"\u2022"}</span> <strong>Solutions Architect:</strong> Design a CLAUDE.md strategy for a multi-team engineering org \u2014 root-level standards, team-level overrides, integration patterns.</p>
-        <p style={bulletStyle}><span style={dot}>{"\u2022"}</span> <strong>Applied Research:</strong> Evaluate how CLAUDE.md content affects model reasoning quality and build evaluation harnesses to measure impact.</p>
+        <p style={bulletStyle}><span style={dot}>{"•"}</span> <strong>PE Pre-Sales:</strong> Write a CLAUDE.md for a prospect’s repo during a live evaluation, showing how context transforms output quality.</p>
+        <p style={bulletStyle}><span style={dot}>{"•"}</span> <strong>PE Post-Sales:</strong> Pair-program with a customer engineering team to author CLAUDE.md files tailored to their codebase and CI/CD pipeline.</p>
+        <p style={bulletStyle}><span style={dot}>{"•"}</span> <strong>Solutions Architect:</strong> Design a CLAUDE.md strategy for a multi-team engineering org — root-level standards, team-level overrides, integration patterns.</p>
+        <p style={bulletStyle}><span style={dot}>{"•"}</span> <strong>Applied Research:</strong> Evaluate how CLAUDE.md content affects model reasoning quality and build evaluation harnesses to measure impact.</p>
 
         <h3 style={h3Style}>2. Role-specific breakouts (Day 4)</h3>
         <p style={pStyle}>Day 4 is the primary role-divergence day. The three customer scenarios are weighted differently by role:</p>
-        <p style={bulletStyle}><span style={dot}>{"\u2022"}</span> <strong>PE Pre-Sales:</strong> Focus on competitive positioning. Practice the honest differentiation pitch.</p>
-        <p style={bulletStyle}><span style={dot}>{"\u2022"}</span> <strong>PE Post-Sales:</strong> Focus on deployment architecture. Practice scoping and estimating real implementations.</p>
-        <p style={bulletStyle}><span style={dot}>{"\u2022"}</span> <strong>Solutions Architects:</strong> All three scenarios equally weighted. Practice the full customer conversation spectrum.</p>
-        <p style={bulletStyle}><span style={dot}>{"\u2022"}</span> <strong>Applied Research:</strong> Focus on technical depth. Practice honest capability assessment.</p>
+        <p style={bulletStyle}><span style={dot}>{"•"}</span> <strong>PE Pre-Sales:</strong> Focus on competitive positioning. Practice the honest differentiation pitch.</p>
+        <p style={bulletStyle}><span style={dot}>{"•"}</span> <strong>PE Post-Sales:</strong> Focus on deployment architecture. Practice scoping and estimating real implementations.</p>
+        <p style={bulletStyle}><span style={dot}>{"•"}</span> <strong>Solutions Architects:</strong> All three scenarios equally weighted. Practice the full customer conversation spectrum.</p>
+        <p style={bulletStyle}><span style={dot}>{"•"}</span> <strong>Applied Research:</strong> Focus on technical depth. Practice honest capability assessment.</p>
 
         <h3 style={h3Style}>3. Capstone brief selection (Day 5)</h3>
         <p style={pStyle}>Capstone briefs are matched to role. A Pre-Sales PE receives a brief that requires a compelling demo and clear next-steps ask. A Post-Sales PE receives a brief that requires a working implementation and handoff documentation. An SA receives a brief that requires an adoption strategy with architecture diagrams and ROI estimates.</p>
 
         <h3 style={h2Style}>Handling Varying Technical Depth</h3>
-        <p style={pStyle}>The cohort will include people who write code daily and people who haven\u2019t opened a terminal in months. Three design choices address this:</p>
-        <p style={bulletStyle}><span style={dot}>{"\u2022"}</span> <strong>Simplify toggle:</strong> Every content page has a \u201cSimplify\u201d button that swaps technical language for plain-English explanations.</p>
-        <p style={bulletStyle}><span style={dot}>{"\u2022"}</span> <strong>Contextual exercises:</strong> Steps are tagged by context (terminal, VS Code, Claude, browser). Participants comfortable in the terminal move faster.</p>
-        <p style={bulletStyle}><span style={dot}>{"\u2022"}</span> <strong>Facilitator guide pacing notes:</strong> The facilitator guide for each module includes pacing advice for mixed-depth rooms.</p>
+        <p style={pStyle}>The cohort will include people who write code daily and people who haven’t opened a terminal in months. Three design choices address this:</p>
+        <p style={bulletStyle}><span style={dot}>{"•"}</span> <strong>Simplify toggle:</strong> Every content page has a “Simplify” button that swaps technical language for plain-English explanations.</p>
+        <p style={bulletStyle}><span style={dot}>{"•"}</span> <strong>Contextual exercises:</strong> Steps are tagged by context (terminal, VS Code, Claude, browser). Participants comfortable in the terminal move faster.</p>
+        <p style={bulletStyle}><span style={dot}>{"•"}</span> <strong>Facilitator guide pacing notes:</strong> The facilitator guide for each module includes pacing advice for mixed-depth rooms.</p>
       </div>
 
       {/* 3. LEARNING MODALITIES */}
@@ -333,26 +333,26 @@ function CurriculumPlanContent() {
         </div>
 
         <h3 style={h2Style}>Live Instruction</h3>
-        <p style={pStyle}>Live sessions are facilitator-led and focus on demonstration, narration, and discussion \u2014 never lecture. The facilitator guide for each module includes:</p>
-        <p style={bulletStyle}><span style={dot}>{"\u2022"}</span> Timed segments with narration scripts (what to say as you demo, word for word)</p>
-        <p style={bulletStyle}><span style={dot}>{"\u2022"}</span> Setup checklists (repos to clone, tools to pre-install, backup plans)</p>
-        <p style={bulletStyle}><span style={dot}>{"\u2022"}</span> Key moments to highlight (e.g., \u201cWhen Claude self-corrects after a test failure \u2014 don\u2019t skip this\u201d)</p>
-        <p style={bulletStyle}><span style={dot}>{"\u2022"}</span> Pacing notes for mixed-depth rooms</p>
-        <p style={pStyle}>Live sessions follow the \u201cI do, we do, you do\u201d progression: facilitator demos first, then the group works together, then individuals tackle the lab independently.</p>
+        <p style={pStyle}>Live sessions are facilitator-led and focus on demonstration, narration, and discussion — never lecture. The facilitator guide for each module includes:</p>
+        <p style={bulletStyle}><span style={dot}>{"•"}</span> Timed segments with narration scripts (what to say as you demo, word for word)</p>
+        <p style={bulletStyle}><span style={dot}>{"•"}</span> Setup checklists (repos to clone, tools to pre-install, backup plans)</p>
+        <p style={bulletStyle}><span style={dot}>{"•"}</span> Key moments to highlight (e.g., “When Claude self-corrects after a test failure — don’t skip this”)</p>
+        <p style={bulletStyle}><span style={dot}>{"•"}</span> Pacing notes for mixed-depth rooms</p>
+        <p style={pStyle}>Live sessions follow the “I do, we do, you do” progression: facilitator demos first, then the group works together, then individuals tackle the lab independently.</p>
 
         <h3 style={h2Style}>Hands-On Labs</h3>
         <p style={pStyle}>Labs are structured as step-by-step walkthroughs embedded directly in the web application. Each step includes:</p>
-        <p style={bulletStyle}><span style={dot}>{"\u2022"}</span> A description of what to do and why</p>
-        <p style={bulletStyle}><span style={dot}>{"\u2022"}</span> Copy-pasteable commands (with a copy button for terminal commands)</p>
-        <p style={bulletStyle}><span style={dot}>{"\u2022"}</span> Expected output so learners can self-verify</p>
-        <p style={bulletStyle}><span style={dot}>{"\u2022"}</span> Tips for common pitfalls and material references</p>
-        <p style={pStyle}>Labs are framed through client scenarios. Day 1\u2019s lab isn\u2019t \u201cinstall Claude Code\u201d \u2014 it\u2019s \u201cyou\u2019re onboarding Meridian Health\u2019s backend team and delivering their first win.\u201d</p>
+        <p style={bulletStyle}><span style={dot}>{"•"}</span> A description of what to do and why</p>
+        <p style={bulletStyle}><span style={dot}>{"•"}</span> Copy-pasteable commands (with a copy button for terminal commands)</p>
+        <p style={bulletStyle}><span style={dot}>{"•"}</span> Expected output so learners can self-verify</p>
+        <p style={bulletStyle}><span style={dot}>{"•"}</span> Tips for common pitfalls and material references</p>
+        <p style={pStyle}>Labs are framed through client scenarios. Day 1’s lab isn’t “install Claude Code” — it’s “you’re onboarding Meridian Health’s backend team and delivering their first win.”</p>
 
         <h3 style={h2Style}>Leave-Behind Reference Materials</h3>
         <p style={pStyle}>The program includes 22 printable materials across three categories:</p>
-        <p style={bulletStyle}><span style={dot}>{"\u2022"}</span> <strong>Grab and Go (5 cards):</strong> Claude Code at a Glance, How Claude Code Thinks, Security Objection Handler, Claude Code vs. Competition, and Cost & ROI Pocket Math.</p>
-        <p style={bulletStyle}><span style={dot}>{"\u2022"}</span> <strong>Module Worksheets (10 items):</strong> CLAUDE.md Builder worksheet, Prompt Patterns cheat sheet, Integration Patterns architecture reference, Demo Planning worksheet, etc.</p>
-        <p style={bulletStyle}><span style={dot}>{"\u2022"}</span> <strong>Deep Reference (7 items):</strong> Deployment Path Finder, Enterprise Deployment talk track, Configuration & Customization reference, and others.</p>
+        <p style={bulletStyle}><span style={dot}>{"•"}</span> <strong>Grab and Go (5 cards):</strong> Claude Code at a Glance, How Claude Code Thinks, Security Objection Handler, Claude Code vs. Competition, and Cost & ROI Pocket Math.</p>
+        <p style={bulletStyle}><span style={dot}>{"•"}</span> <strong>Module Worksheets (10 items):</strong> CLAUDE.md Builder worksheet, Prompt Patterns cheat sheet, Integration Patterns architecture reference, Demo Planning worksheet, etc.</p>
+        <p style={bulletStyle}><span style={dot}>{"•"}</span> <strong>Deep Reference (7 items):</strong> Deployment Path Finder, Enterprise Deployment talk track, Configuration & Customization reference, and others.</p>
       </div>
 
       {/* 4. COMPETENCY OUTCOMES */}
@@ -362,36 +362,36 @@ function CurriculumPlanContent() {
           <h2 style={h1Style}>Competency Outcomes</h2>
         </div>
         <div style={accentLine(C.orange)} />
-        <p style={pStyle}>These are what each role should be able to <em>do</em> \u2014 not just know \u2014 by the end of the program. Each outcome is tied to a specific day\u2019s module.</p>
+        <p style={pStyle}>These are what each role should be able to <em>do</em> — not just know — by the end of the program. Each outcome is tied to a specific day’s module.</p>
 
         {[
           { role: "PE Pre-Sales", color: C.orange, outcomes: [
-            { day: "Day 1", text: "Demo Claude Code\u2019s install and first-run experience to a prospect \u2014 narrate the agentic loop as it happens and explain why it matters vs. autocomplete." },
-            { day: "Day 2", text: "Write a CLAUDE.md for a prospect\u2019s repo during a live evaluation, showing how context transforms output quality." },
-            { day: "Day 3", text: "Architect a Claude Code integration pattern for a customer evaluation \u2014 hooks for guardrails, MCP for their internal tools, slash commands for team workflows." },
-            { day: "Day 4", text: "Run a full technical evaluation against a real customer use case \u2014 build a reference architecture, handle objections on security and cost, position against Copilot/Cursor/Devin, and close with a next-steps demo plan." },
-            { day: "Day 5", text: "Deliver a compelling, tailored Claude Code demo from a cold customer brief in under 2 hours \u2014 including architecture proposal, live demo, and a clear next-steps ask." },
+            { day: "Day 1", text: "Demo Claude Code’s install and first-run experience to a prospect — narrate the agentic loop as it happens and explain why it matters vs. autocomplete." },
+            { day: "Day 2", text: "Write a CLAUDE.md for a prospect’s repo during a live evaluation, showing how context transforms output quality." },
+            { day: "Day 3", text: "Architect a Claude Code integration pattern for a customer evaluation — hooks for guardrails, MCP for their internal tools, slash commands for team workflows." },
+            { day: "Day 4", text: "Run a full technical evaluation against a real customer use case — build a reference architecture, handle objections on security and cost, position against Copilot/Cursor/Devin, and close with a next-steps demo plan." },
+            { day: "Day 5", text: "Deliver a compelling, tailored Claude Code demo from a cold customer brief in under 2 hours — including architecture proposal, live demo, and a clear next-steps ask." },
           ]},
           { role: "PE Post-Sales", color: C.blue, outcomes: [
-            { day: "Day 1", text: "Set up Claude Code in a customer\u2019s dev environment, troubleshoot common installation issues, and guide a developer through their first agentic task." },
+            { day: "Day 1", text: "Set up Claude Code in a customer’s dev environment, troubleshoot common installation issues, and guide a developer through their first agentic task." },
             { day: "Day 2", text: "Pair-program with a customer engineering team to author CLAUDE.md files tailored to their codebase, conventions, and CI/CD pipeline." },
-            { day: "Day 3", text: "Build and deploy custom MCP servers, hooks, and slash commands in a customer\u2019s environment \u2014 debugging integration issues live." },
-            { day: "Day 4", text: "Navigate a live customer debugging session using Claude Code \u2014 diagnose a failing integration, fix it with the customer watching, and turn the save into a relationship-building moment." },
-            { day: "Day 5", text: "Scope, build, and deliver a working Claude Code implementation from a customer brief \u2014 pair-program through the hard parts, leave behind documentation, and hand off a running system." },
+            { day: "Day 3", text: "Build and deploy custom MCP servers, hooks, and slash commands in a customer’s environment — debugging integration issues live." },
+            { day: "Day 4", text: "Navigate a live customer debugging session using Claude Code — diagnose a failing integration, fix it with the customer watching, and turn the save into a relationship-building moment." },
+            { day: "Day 5", text: "Scope, build, and deliver a working Claude Code implementation from a customer brief — pair-program through the hard parts, leave behind documentation, and hand off a running system." },
           ]},
           { role: "Solutions Architects", color: C.green, outcomes: [
             { day: "Day 1", text: "Articulate the agentic coding value proposition to a technical audience and map it to common customer pain points." },
-            { day: "Day 2", text: "Design a CLAUDE.md strategy for a multi-team engineering org \u2014 root-level standards, team-level overrides, and integration patterns with existing style guides." },
-            { day: "Day 3", text: "Design a phased Claude Code adoption plan \u2014 from individual pilot to team-wide deployment \u2014 with integration patterns for the customer\u2019s existing toolchain." },
-            { day: "Day 4", text: "Assess a customer\u2019s engineering org, identify the highest-leverage Claude Code insertion points, position honestly against competitors, and present a strategic adoption roadmap." },
-            { day: "Day 5", text: "Present a complete Claude Code adoption strategy from a blind customer brief \u2014 architecture diagrams, phased rollout, integration patterns, ROI estimates, and honest risk assessment." },
+            { day: "Day 2", text: "Design a CLAUDE.md strategy for a multi-team engineering org — root-level standards, team-level overrides, and integration patterns with existing style guides." },
+            { day: "Day 3", text: "Design a phased Claude Code adoption plan — from individual pilot to team-wide deployment — with integration patterns for the customer’s existing toolchain." },
+            { day: "Day 4", text: "Assess a customer’s engineering org, identify the highest-leverage Claude Code insertion points, position honestly against competitors, and present a strategic adoption roadmap." },
+            { day: "Day 5", text: "Present a complete Claude Code adoption strategy from a blind customer brief — architecture diagrams, phased rollout, integration patterns, ROI estimates, and honest risk assessment." },
           ]},
           { role: "Applied Research", color: C.muted, outcomes: [
-            { day: "Day 1", text: "Analyze Claude Code\u2019s agentic loop behavior \u2014 tool calls, planning steps, error recovery \u2014 and identify areas where model capabilities could be extended." },
+            { day: "Day 1", text: "Analyze Claude Code’s agentic loop behavior — tool calls, planning steps, error recovery — and identify areas where model capabilities could be extended." },
             { day: "Day 2", text: "Evaluate how CLAUDE.md content affects model reasoning quality, identify prompt patterns that improve code generation accuracy, and build evaluation harnesses." },
-            { day: "Day 3", text: "Build custom tooling with the Agent SDK \u2014 automated code review pipelines, evaluation harnesses, and workflows that connect Claude Code to model training infrastructure." },
-            { day: "Day 4", text: "Advise on Claude Code\u2019s capabilities and limitations for ML/training workflows \u2014 propose custom tooling workarounds and scope what\u2019s possible vs. what requires model-level changes." },
-            { day: "Day 5", text: "Design and present a Claude Code-powered research workflow \u2014 custom Agent SDK tooling, evaluation metrics, integration with training pipelines \u2014 with a working prototype." },
+            { day: "Day 3", text: "Build custom tooling with the Agent SDK — automated code review pipelines, evaluation harnesses, and workflows that connect Claude Code to model training infrastructure." },
+            { day: "Day 4", text: "Advise on Claude Code’s capabilities and limitations for ML/training workflows — propose custom tooling workarounds and scope what’s possible vs. what requires model-level changes." },
+            { day: "Day 5", text: "Design and present a Claude Code-powered research workflow — custom Agent SDK tooling, evaluation metrics, integration with training pipelines — with a working prototype." },
           ]},
         ].map((group, gi) => (
           <div key={gi} style={{ margin: "28px 0" }}>
@@ -418,19 +418,19 @@ function CurriculumPlanContent() {
         <div style={accentLine(C.blue)} />
 
         <h3 style={h2Style}>Why This Sequence</h3>
-        <p style={pStyle}>The five-day arc follows the Dreyfus model of skill acquisition: novice \u2192 advanced beginner \u2192 competent \u2192 proficient \u2192 expert.</p>
-        <p style={bulletStyle}><span style={dot}>{"\u2022"}</span> <strong>Days 1\u20132 (Novice \u2192 Advanced Beginner):</strong> Learners follow rules. Install Claude Code, learn the commands, write a CLAUDE.md by template. Success is defined by following the steps correctly.</p>
-        <p style={bulletStyle}><span style={dot}>{"\u2022"}</span> <strong>Day 3 (Competent):</strong> Learners make decisions. Which hooks to configure, which MCP servers to connect, how to compose them. Success requires judgment, not just execution.</p>
-        <p style={bulletStyle}><span style={dot}>{"\u2022"}</span> <strong>Day 4 (Proficient):</strong> Learners handle ambiguity. Customer objections don\u2019t follow scripts. The security conversation requires reading the room; the competitive conversation requires honest differentiation.</p>
-        <p style={bulletStyle}><span style={dot}>{"\u2022"}</span> <strong>Day 5 (Expert):</strong> Learners integrate everything under pressure. A blind brief, a time constraint, a live audience. This is as close as we can get to the real job without being in the field.</p>
-        <p style={pStyle}>This progression also follows experiential learning theory (Kolb): concrete experience \u2192 reflective observation \u2192 abstract conceptualization \u2192 active experimentation. Each module completes this cycle.</p>
+        <p style={pStyle}>The five-day arc follows the Dreyfus model of skill acquisition: novice → advanced beginner → competent → proficient → expert.</p>
+        <p style={bulletStyle}><span style={dot}>{"•"}</span> <strong>Days 1–2 (Novice → Advanced Beginner):</strong> Learners follow rules. Install Claude Code, learn the commands, write a CLAUDE.md by template. Success is defined by following the steps correctly.</p>
+        <p style={bulletStyle}><span style={dot}>{"•"}</span> <strong>Day 3 (Competent):</strong> Learners make decisions. Which hooks to configure, which MCP servers to connect, how to compose them. Success requires judgment, not just execution.</p>
+        <p style={bulletStyle}><span style={dot}>{"•"}</span> <strong>Day 4 (Proficient):</strong> Learners handle ambiguity. Customer objections don’t follow scripts. The security conversation requires reading the room; the competitive conversation requires honest differentiation.</p>
+        <p style={bulletStyle}><span style={dot}>{"•"}</span> <strong>Day 5 (Expert):</strong> Learners integrate everything under pressure. A blind brief, a time constraint, a live audience. This is as close as we can get to the real job without being in the field.</p>
+        <p style={pStyle}>This progression also follows experiential learning theory (Kolb): concrete experience → reflective observation → abstract conceptualization → active experimentation. Each module completes this cycle.</p>
 
         <h3 style={h2Style}>Key Trade-offs</h3>
         {[
-          { title: "Shared Days 1\u20133 vs. earlier role divergence", text: "I chose shared sessions for the first three days despite the audience having different technical depths. The alternative \u2014 splitting into technical and non-technical tracks on Day 1 \u2014 would mean Pre-Sales PEs never build the hands-on depth needed to handle technical customer conversations. The \u201cSimplify\u201d toggle and facilitator pacing notes mitigate the mixed-depth challenge without sacrificing depth for anyone." },
-          { title: "Client scenarios as framing vs. abstract exercises", text: "Every module is framed through a realistic client scenario (Meridian Health, Lumen Logistics, Arcadia Financial, etc.) rather than abstract exercises. This costs development time \u2014 each scenario needs a believable company, industry context, and problem statement. The payoff: learners practice the actual cognitive work of a customer engagement rather than just learning features in isolation." },
+          { title: "Shared Days 1–3 vs. earlier role divergence", text: "I chose shared sessions for the first three days despite the audience having different technical depths. The alternative — splitting into technical and non-technical tracks on Day 1 — would mean Pre-Sales PEs never build the hands-on depth needed to handle technical customer conversations. The “Simplify” toggle and facilitator pacing notes mitigate the mixed-depth challenge without sacrificing depth for anyone." },
+          { title: "Client scenarios as framing vs. abstract exercises", text: "Every module is framed through a realistic client scenario (Meridian Health, Lumen Logistics, Arcadia Financial, etc.) rather than abstract exercises. This costs development time — each scenario needs a believable company, industry context, and problem statement. The payoff: learners practice the actual cognitive work of a customer engagement rather than just learning features in isolation." },
           { title: "Single-file React app vs. a more scalable architecture", text: "The application is built as a single App.jsx file. This was a deliberate choice for a portfolio piece that needs to be instantly understandable and deployable. For a production curriculum platform, I would split into components, add a proper router, and likely use a content management system for the curriculum data." },
-          { title: "Depth on Day 2 (CLAUDE.md) vs. distributing across days", text: "Day 2 is the deepest module (17 steps with facilitator narration scripts). I chose to invest heavily here because the CLAUDE.md before/after demo is the single most persuasive moment in the entire program. It\u2019s the demo every PE will run in their first customer conversation. Getting this day right has outsized impact on field readiness." },
+          { title: "Depth on Day 2 (CLAUDE.md) vs. distributing across days", text: "Day 2 is the deepest module (17 steps with facilitator narration scripts). I chose to invest heavily here because the CLAUDE.md before/after demo is the single most persuasive moment in the entire program. It’s the demo every PE will run in their first customer conversation. Getting this day right has outsized impact on field readiness." },
         ].map((item, i) => (
           <div key={i} style={{ background: C.cream, borderRadius: 12, border: `1px solid ${C.lightGray}`, padding: "20px 24px", marginBottom: 16 }}>
             <h4 style={{ fontFamily: "var(--sans)", fontSize: 13, fontWeight: 600, color: C.dark, margin: "0 0 8px" }}>{item.title}</h4>
@@ -438,13 +438,13 @@ function CurriculumPlanContent() {
           </div>
         ))}
 
-        <h3 style={h2Style}>What I\u2019d Do Differently with More Time</h3>
-        <p style={bulletStyle}><span style={dot}>{"\u2022"}</span> <strong>Video walkthroughs:</strong> Pre-recorded facilitator demos for each module, so learners can watch the \u201cideal\u201d run before attempting it themselves.</p>
-        <p style={bulletStyle}><span style={dot}>{"\u2022"}</span> <strong>Quantitative confidence measurement:</strong> Add a 1\u20135 confidence self-rating before and after each module.</p>
-        <p style={bulletStyle}><span style={dot}>{"\u2022"}</span> <strong>Real MCP server for Day 3:</strong> The current lab uses a mock Jira server. With more time, I\u2019d provision a real sandbox Jira instance.</p>
-        <p style={bulletStyle}><span style={dot}>{"\u2022"}</span> <strong>Alumni community and feedback loop:</strong> A Slack channel or Notion database where Basecamp graduates share field reports.</p>
-        <p style={bulletStyle}><span style={dot}>{"\u2022"}</span> <strong>Adaptive difficulty:</strong> Use the credential system to unlock advanced paths for strong performers.</p>
-        <p style={bulletStyle}><span style={dot}>{"\u2022"}</span> <strong>Localization and async delivery:</strong> Build an async-first version with video content, auto-graded exercises, and optional live office hours.</p>
+        <h3 style={h2Style}>What I’d Do Differently with More Time</h3>
+        <p style={bulletStyle}><span style={dot}>{"•"}</span> <strong>Video walkthroughs:</strong> Pre-recorded facilitator demos for each module, so learners can watch the “ideal” run before attempting it themselves.</p>
+        <p style={bulletStyle}><span style={dot}>{"•"}</span> <strong>Quantitative confidence measurement:</strong> Add a 1–5 confidence self-rating before and after each module.</p>
+        <p style={bulletStyle}><span style={dot}>{"•"}</span> <strong>Real MCP server for Day 3:</strong> The current lab uses a mock Jira server. With more time, I’d provision a real sandbox Jira instance.</p>
+        <p style={bulletStyle}><span style={dot}>{"•"}</span> <strong>Alumni community and feedback loop:</strong> A Slack channel or Notion database where Basecamp graduates share field reports.</p>
+        <p style={bulletStyle}><span style={dot}>{"•"}</span> <strong>Adaptive difficulty:</strong> Use the credential system to unlock advanced paths for strong performers.</p>
+        <p style={bulletStyle}><span style={dot}>{"•"}</span> <strong>Localization and async delivery:</strong> Build an async-first version with video content, auto-graded exercises, and optional live office hours.</p>
       </div>
     </>
   );
@@ -457,10 +457,10 @@ function CohortFeedbackContent() {
       <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(140px, 1fr))", gap: 10, margin: "0 0 40px" }}>
         {[
           { stat: "35", label: "NPS", sub: "n=17" },
-          { stat: "4.1", label: "Met expectations", sub: "1\u20135 avg" },
-          { stat: "31%", label: "Said \u201cToo fast\u201d", sub: "pacing" },
+          { stat: "4.1", label: "Met expectations", sub: "1–5 avg" },
+          { stat: "31%", label: "Said “Too fast”", sub: "pacing" },
           { stat: "3.9", label: "Evals engagement", sub: "lowest session" },
-          { stat: "flat", label: "Confidence trend", sub: "4.29\u21924.28\u21924.28" },
+          { stat: "flat", label: "Confidence trend", sub: "4.29→4.28→4.28" },
           { stat: "3.9", label: "Day 3 realism", sub: "work simulation" },
         ].map((s, i) => (
           <div key={i} style={{ background: C.cream, border: `1px solid ${C.lightGray}`, borderRadius: 10, padding: "16px 14px", textAlign: "center" }}>
@@ -548,7 +548,7 @@ export default function App() {
               <div style={st.eyebrow}>Part 1 · Written curriculum plan</div>
               <div style={{ height: 2, width: 48, background: C.orange, margin: "16px 0 32px", borderRadius: 1 }} />
               <h1 style={{ ...st.heroTitle, fontSize: 36 }}>Curriculum<br /><span style={{ color: C.orange }}>plan.</span></h1>
-              <p style={st.heroBody}>A five-day structured onboarding track for GTM teams \u2014 PE Pre-Sales, PE Post-Sales, Solutions Architects, and Applied Research \u2014 building from first install to job-ready customer engagements.</p>
+              <p style={st.heroBody}>A five-day structured onboarding track for GTM teams — PE Pre-Sales, PE Post-Sales, Solutions Architects, and Applied Research — building from first install to job-ready customer engagements.</p>
               <div style={{ display: "flex", gap: 8, marginTop: 20, flexWrap: "wrap" }}>
                 {["Arc & Sequence", "Audience", "Modalities", "Outcomes", "Rationale"].map((label, i) => (
                   <span key={i} style={{ fontFamily: "var(--mono)", fontSize: 9, padding: "4px 10px", borderRadius: 14, border: `1px solid ${C.orange}30`, color: C.orange, background: C.orange + "08" }}>{label}</span>
