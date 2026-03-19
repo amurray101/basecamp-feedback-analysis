@@ -133,6 +133,19 @@ function CurriculumPlanContent() {
 
   return (
     <>
+      {/* 0. COMMON CORE */}
+      <div style={sectionStyle}>
+        <div style={{ display: "flex", alignItems: "baseline", gap: 14, marginBottom: 8 }}>
+          <span style={{ fontFamily: "var(--serif)", fontSize: 42, color: C.muted, lineHeight: 1, opacity: 0.25 }}>00</span>
+          <h2 style={h1Style}>Common Core</h2>
+        </div>
+        <div style={accentLine(C.muted)} />
+        <p style={pStyle}>Before the curriculum splits into role-specific tracks, every participant goes through a shared common core that establishes three foundations: Anthropic as a company, the product suite, and Claude Code as a tool.</p>
+        <p style={pStyle}>The first layer is Anthropic itself — its mission, its approach to AI safety, and the values that shape how the company builds and ships products. This matters because every person in a GTM role represents these ideas to customers. When a PE talks about Claude's design choices or an SA explains why a feature works the way it does, they need to speak from genuine understanding, not marketing copy. The common core covers Anthropic's responsible scaling commitments, its research-driven culture, and how those values translate into product decisions that participants will need to articulate in the field.</p>
+        <p style={pStyle}>The second layer is the Anthropic product suite — Claude (the model family), the API, Claude for Enterprise, and how Claude Code fits within that ecosystem. Participants need to understand where Claude Code sits relative to the rest of the platform: what problems it solves that the API alone doesn't, how it complements Claude for Enterprise deployments, and how to position it alongside other Anthropic products in a customer conversation. This prevents the common failure mode where someone can demo Claude Code but can't answer "how does this relate to the Claude API we're already using?"</p>
+        <p style={pStyle}>The third layer — and the one that takes the most time — is a comprehensive, hands-on overview of Claude Code itself. Before anyone learns role-specific applications, they need to understand the product deeply: the agentic architecture, the tool-use loop, how context windows work in practice, the permission model, CLAUDE.md conventions, and the extension points (hooks, MCP, slash commands, Agent SDK). This is the technical foundation that every subsequent module builds on. A Pre-Sales PE, a Post-Sales PE, a Solutions Architect, and an Applied Researcher all need this same depth — they just apply it differently. The common core ensures everyone shares a baseline vocabulary and mental model before the curriculum begins to differentiate.</p>
+      </div>
+
       {/* 1. CURRICULUM ARC */}
       <div style={sectionStyle}>
         <div style={{ display: "flex", alignItems: "baseline", gap: 14, marginBottom: 8 }}>
