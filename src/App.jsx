@@ -363,23 +363,6 @@ function CurriculumPlanContent() {
 function CohortFeedbackContent() {
   return (
     <>
-      <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(140px, 1fr))", gap: 10, margin: "0 0 40px" }}>
-        {[
-          { stat: "35", label: "NPS", sub: "n=17" },
-          { stat: "4.1", label: "Met expectations", sub: "1–5 avg" },
-          { stat: "31%", label: "Said “Too fast”", sub: "pacing" },
-          { stat: "3.9", label: "Evals engagement", sub: "lowest session" },
-          { stat: "flat", label: "Confidence trend", sub: "4.29→4.28→4.28" },
-          { stat: "3.9", label: "Day 3 realism", sub: "work simulation" },
-        ].map((s, i) => (
-          <div key={i} style={{ background: C.cream, border: `1px solid ${C.lightGray}`, borderRadius: 10, padding: "16px 14px", textAlign: "center" }}>
-            <div style={{ fontFamily: "var(--serif)", fontSize: 22, color: s.stat === "flat" || parseFloat(s.stat) < 4.0 || s.stat === "31%" ? C.orange : C.green, lineHeight: 1.2 }}>{s.stat}</div>
-            <div style={{ fontFamily: "var(--sans)", fontSize: 11, color: C.muted, marginTop: 4 }}>{s.label}</div>
-            <div style={{ fontFamily: "var(--mono)", fontSize: 9, color: C.faint, marginTop: 2 }}>{s.sub}</div>
-          </div>
-        ))}
-      </div>
-
       {FEEDBACK_RESPONSE.map((section, si) => (
         <div key={section.id} style={{ marginBottom: 56, ...st.fadeUp, animationDelay: `${0.15 + si * 0.08}s` }}>
           <div style={{ display: "flex", alignItems: "baseline", gap: 14, marginBottom: 24 }}>
